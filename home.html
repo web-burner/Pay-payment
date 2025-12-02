@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0 ,user-scalable = 0">
+    <title>Payooo Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="h-[844px] max-w-[390px]">
+        <nav class="flex justify-between px-4 py-2.5 border-b border-gray-200">
+            <div class="flex justify-center items-center gap-2.5">
+                <img src="./Payoo-MFS-Resources/assets/Group.png" alt="Payooo Logo" class="w-[50px] h-12">
+                <div>
+                    <p class="text-xl font-bold">$<span id="current-balance">5000</span></p>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+            <button id="log-out" class="border-2 border-gray-300 rounded-lg h-[38px] w-[102px] bg-gray-300"><span
+                    class="mr-1"><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i></span> Log Out</button>
+
+        </nav>
+        <main >
+            <!-- greet -->
+            <div class="greet  px-4 py-3 space-y-3 mb-6">
+                <h2 class="text-2xl font-bold">🔥 Welcome to Payooo!</h2>
+                <p class="text-[#08080885]">Enjoy easy and convenient financial services with us. Cashout charge is low
+                    and fast transaction time
+                </p>
+            </div>
+
+
+            <!-- menu -->
+            <div class="menu h-[196px] w-[390px] px-5 grid grid-cols-3 grid-rows-2 gap-3 mb-11">
+                <div id="add-money"
+                    class="menu-items border-2  border-gray-300 rounded-lg flex flex-col justify-center items-center space-y-2">
+                    <img src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                    <p>Add Money</p>
+                </div>
+                <div id="cashout"
+                    class="menu-items border-2 border-gray-300 rounded-lg flex flex-col justify-center items-center space-y-2">
+                    <img src="./Payoo-MFS-Resources/assets/send1.png" alt="">
+                    <p>Cash Out</p>
+                </div>
+                <div id="transfer-money"
+                    class="menu-items border-2 border-gray-300 rounded-lg flex flex-col justify-center items-center space-y-2">
+                    <img src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                    <p>Transfer Money</p>
+                </div>
+                <div id="bonus"
+                    class="menu-items border-2 border-gray-300 rounded-lg flex flex-col justify-center items-center space-y-2">
+                    <img src="./Payoo-MFS-Resources/assets/bonus1.png" alt="">
+                    <p>Get Bonus</p>
+                </div>
+                <div id="pay-bill"
+                    class="menu-items border-2 border-gray-300 rounded-lg flex flex-col justify-center items-center space-y-2">
+                    <img src="./Payoo-MFS-Resources/assets/purse1.png" alt="">
+                    <p>Pay Bill</p>
+                </div>
+                <div id="transaction"
+                    class="menu-items border-2 border-gray-300 rounded-lg flex flex-col justify-center items-center space-y-2">
+                    <img src="./Payoo-MFS-Resources/assets/transaction1.png" alt="">
+                    <p>Transactions</p>
+                </div>
+            </div>
+
+            <!-- transaction details  -->
+            <div class="bg-gray-200 min-h-[260px] max-h-[620px] pb-10">
+                <div id="home" class="form w-[390px] px-5">
+                    <div class="flex justify-between items-center py-5 ">
+                        <h3 class="text-xl font-bold">Latest Payment</h3>
+                        <a href="#">View All</a>
+                    </div>
+                    <div class="flex flex-col gap-3 w-full">
+                        <div
+                            class="h-[70px] w-full mx-auto flex justify-between items-center border border-gray-200 p-2.5 rounded-2xl gap-5 bg-white">
+                            <div class="flex justify-center items-center gap-4">
+                                <div
+                                    class="logo bg-gray-200 h-[45px] w-[45px] rounded-full flex justify-center items-center">
+                                    <img src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                                </div>
+                                <div>
+                                    <p>Electricity Bill</p>
+                                    <p>Today 01:44 AM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="h-[70px] w-full flex justify-between items-center border border-gray-200 p-2.5 rounded-2xl gap-5 bg-white">
+                            <div class="flex justify-center items-center gap-4">
+                                <div
+                                    class="logo bg-gray-200 h-[45px] w-[45px] rounded-full flex justify-center items-center">
+                                    <img src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                                </div>
+                                <div>
+                                    <p>Electricity Bill</p>
+                                    <p>Today 01:44 AM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="h-[70px] w-full flex justify-between items-center border border-gray-200 p-2.5 rounded-2xl gap-5 bg-white">
+                            <div class="flex justify-center items-center gap-4">
+                                <div
+                                    class="logo bg-gray-200 h-[45px] w-[45px] rounded-full flex justify-center items-center">
+                                    <img src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                                </div>
+                                <div>
+                                    <p>Electricity Bill</p>
+                                    <p>Today 01:44 AM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="h-[70px] w-full flex justify-between items-center border border-gray-200 p-2.5 rounded-2xl gap-5 bg-white">
+                            <div class="flex justify-center items-center gap-4">
+                                <div
+                                    class="logo bg-gray-200 h-[45px] w-[45px] rounded-full flex justify-center items-center">
+                                    <img src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                                </div>
+                                <div>
+                                    <p>Electricity Bill</p>
+                                    <p>Today 01:44 AM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- add money feature  -->
+                <form id="add-money-form" class="form p-5 hidden ">
+                    <h2 class="mb-4 text-xl">Add Money</h2>
+                    <div class="space-y-4 bg-white p-4 rounded-2xl ">
+                        <div>
+                            <p>Select Card</p>
+                            <select id="cards"
+                                class="select rounded-full h-[52px] w-full bg-gray-200  text-[16px] outline-none mt-2.5">
+                                <option value="Not Yet Select" disabled selected>Not Yet Select </option>
+                                <option>Visa</option>
+                                <option>Master</option>
+                                <option>Amex</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="card-number">Card Number</label> <br>
+                            <input type="text" id="card-number"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Card Number">
+                        </div>
+                        <div>
+                            <label for="add-amount">Amount to Add</label><br>
+                            <input type="text" id="add-amount"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Amount">
+                        </div>
+                        <div>
+                            <label for="pin-number">Pin Number</label> <br>
+                            <input type="text" id="pin-number"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Pin">
+                        </div>
+                        <button id="add-money-btn"
+                            class="rounded-full h-[52px] w-full text-white bg-blue-600 font-semibold">Add Money</button>
+                    </div>
+                </form>
+
+
+                <!-- cash out feature  -->
+                <form id="cashout-form" class="form p-5 hidden">
+                    <h2 class="mb-4 text-xl">Cash Out</h2>
+                    <div class="space-y-4 bg-white p-4 rounded-2xl">
+
+                        <div>
+                            <label for="agent-number">Agent Number</label> <br>
+                            <input type="text" id="agent-number"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Card Number">
+                        </div>
+                        <div>
+                            <label for="cashout-amount">Amount</label><br>
+                            <input type="text" id="cashout-amount"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Amount">
+                        </div>
+                        <div>
+                            <label for="cashout-pin">Pin Number</label> <br>
+                            <input type="text" id="cashout-pin"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Pin">
+                        </div>
+                        <button id="cashout-btn"
+                            class="rounded-full h-[52px] w-full text-white bg-blue-600 font-semibold">Cash Out</button>
+                    </div>
+                </form>
+                <!-- transfer money feature -->
+                <form id="transfer-money-form" class="form p-5 hidden">
+                    <h2 class="mb-4 text-xl">Transfer Money</h2>
+                    <div class="space-y-4 bg-white p-4 rounded-2xl">
+
+                        <div >
+                            <label for="user-number">User Card Number</label> <br>
+                            <input type="text" id="user-number"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Card Number">
+                        </div>
+                        <div >
+                            <label for="transfer-amount">Transfer Amount</label><br>
+                            <input type="text" id="transfer-amount"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Amount">
+                        </div>
+                        <div >
+                            <label for="transfer-pin">Pin Number</label> <br>
+                            <input type="text" id="transfer-pin"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Pin">
+                        </div>
+                        <button id="Transfer-btn"
+                            class="rounded-full h-[52px] w-full text-white bg-blue-600 font-semibold">Transfer</button>
+                    </div>
+                </form>
+                <!-- get bonus feature -->
+                <form id="bonus-form" class="form p-5 hidden">
+                    <h2 class="mb-4 text-xl">Get Bonus</h2>
+                    <div class="space-y-4 bg-white p-4 rounded-2xl">
+
+                        <div>
+                            <label for="bonus-coupon">Enter Bonus Coupon</label> <br>
+                            <input type="text" id="bonus-coupon"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-3"
+                                placeholder="Enter Bonus Coupon">
+                        </div>
+                        <button id="bonus-btn"
+                            class="rounded-full h-[52px] w-full text-white bg-blue-600 font-semibold">Get Bonus</button>
+                    </div>
+                </form>
+
+                <!-- pay bill feature  -->
+                <form id="pay-bill-form" class="form p-5 hidden">
+                    <h2 class="mb-4 text-xl">Pay Bill</h2>
+                    <div class="space-y-4 bg-white p-4 rounded-2xl">
+                        <div>
+                            <p>Select Card</p>
+                            <select id="pay-cards"
+                                class="select rounded-full h-[52px] w-full bg-gray-200 border-none text-[16px] outline-none mt-2.5">
+                                <option value="Not Yet Select" disabled selected>Not Yet Select</option>
+                                <option>Visa</option>
+                                <option>Master</option>
+                                <option>Amex</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="pay-card-number">Card Number</label> <br>
+                            <input type="text" id="pay-card-number"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Card Number">
+                        </div>
+                        <div>
+                            <label for="pay-amount">Amount to Add</label><br>
+                            <input type="text" id="pay-amount"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Amount">
+                        </div>
+                        <div>
+                            <label for="pay-pin">Pin Number</label> <br>
+                            <input type="text" id="pay-pin"
+                                class="rounded-full h-[52px] w-full p-2.5  bg-gray-200 border-none text-gray-600 text-[16px] outline-none mt-2.5"
+                                placeholder="Enter Pin">
+                        </div>
+                        <button id="pay-btn"
+                            class="rounded-full h-[52px] w-full text-white bg-blue-600 font-semibold">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="home.js"></script>
+</body>
+
+</html>
