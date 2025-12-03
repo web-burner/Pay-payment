@@ -29,12 +29,12 @@ function setInnerText(value) {
 function showActive (id){
   const menuItems = document.getElementsByClassName('menu-items');
   for ( let item of menuItems){
-    item.classList.remove("bg-sky-100","border-blue-400")
+    item.classList.remove("bg-sky-100","border-blue-400" , "text-blue-700")
     item.classList.add("border-gray-300")
   }
   const element = document.getElementById(id);
   element.classList.remove("border-gray-300")
-  element.classList.add("bg-sky-100", "border-blue-400")
+  element.classList.add("bg-sky-100", "border-blue-400" , "text-blue-700")
 }
 // show forms
 function showForms(id) {
